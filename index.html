@@ -1,0 +1,40 @@
+class="video" <!DOCTYPE html>
+<html lang="pt-BR">
+    <head>	
+	    <title>NoWay RP</title>
+		<link rel="icon" type="img/png" href="img/logo.png" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet" type="text/css"/>
+	    <link href="style.css" rel="stylesheet" type="text/css" />	
+		<video class="video" autoplay muted loop id="myVideo">
+		    <source src="noway-4k.mp4" type="video/mp4">
+		</video>
+    </head>
+	<body>
+		<audio autoplay loop id="music">
+			<source src="audio.mp3" type="audio/mpeg">
+		</audio>
+		<!-- <img class="img-body" src="http://200.9.155.180/loading-side/logo.png" alt="Ghost" /> -->
+		<script type="text/javascript">
+			var music = document.getElementById("music");
+			music.volume = 0.5;
+			document.addEventListener("keypress",(event) => {
+				if(event.key == "p"){
+					if(music.paused){
+						music.play();
+					} else {
+						music.pause();
+					}
+				}
+			});
+		</script>
+    </body>
+	<footer>
+		<div class="info">
+			Mais informações: 
+		<a href="https://discord.gg/dhb745ryg" title="Discord"><img class="img-fooster" src="img/discord.png"/></a>
+		<a href="https://www.instagram.com/noway.city" title="Instagram"><img class="img-fooster" src="img/instagram.png"/></a>
+		<a href="https://www.tiktok.com/@nowayrp" title="TikTok"><img class="img-fooster" src="img/tiktok.png"/></a>
+		</div>
+	</footer>
+</html>
+</html>
